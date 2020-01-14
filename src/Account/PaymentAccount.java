@@ -4,8 +4,7 @@ import java.text.DecimalFormat;
 
 public class PaymentAccount {
 
-    public double money;
-    public double allCount;
+    protected double allCount;
     DecimalFormat formatter = new DecimalFormat("#0.0 руб");
 
     public PaymentAccount() {

@@ -6,8 +6,8 @@ import java.util.Date;
 public class DepositAccount extends PaymentAccount {
 
     Calendar calendar = Calendar.getInstance();
-    Date afterMonth;
-    Date today;
+    private Date afterMonth;
+    private Date today;
 
     public DepositAccount() {
     }
@@ -25,7 +25,7 @@ public class DepositAccount extends PaymentAccount {
             System.out.println("Снятие со счета доступно через месяц после последнего вклада");
         }
     }
-    public void setCalendar(){
+    private void setCalendar(){
         today = calendar.getTime();
         calendar.add(Calendar.MONTH,1);
         afterMonth = calendar.getTime();
